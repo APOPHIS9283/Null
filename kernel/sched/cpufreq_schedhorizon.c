@@ -16,7 +16,6 @@
 #include <linux/sched/cpufreq.h>
 #include <trace/events/power.h>
 #include <linux/sched/sysctl.h>
-#include <linux/kprofiles.h>
 
 static unsigned int default_efficient_freq_lp[] = {1708800};
 static u64 default_up_delay_lp[] = {100 * NSEC_PER_MSEC};
