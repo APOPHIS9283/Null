@@ -26,7 +26,7 @@ static DEFINE_MUTEX(fsync_mutex);
 // Declarations
 
 bool suspend_active __read_mostly = true;
-bool dyn_fsync_active __read_mostly = false;
+bool dyn_fsync_active __read_mostly = true;
 
 struct notifier_block msm_drm_notif;
 
@@ -265,5 +265,5 @@ module_init(dyn_fsync_init);
 module_exit(dyn_fsync_exit);
 
 MODULE_AUTHOR("andip71");
-MODULE_DESCRIPTION("dynamic fsync - automatic fs sync optimization for msm8974");
+MODULE_DESCRIPTION("dynamic fsync - automatic fs sync optimization");
 MODULE_LICENSE("GPL v2");
